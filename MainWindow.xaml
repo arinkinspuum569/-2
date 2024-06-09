@@ -1,0 +1,14 @@
+﻿<Window x:Class="анимация_кружка_проба_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:анимация_кружка_проба_2"
+        mc:Ignorable="d"
+          Title="Main Window" Height="350" Width="525">
+   
+    <Grid>
+        <Ellipse Fill="Blue" Width="50" Height="50" Canvas.Left="{Binding X}" Canvas.Top="{Binding Y}" />
+        <Button Content="Move Circle" Command="{Binding MoveCircleCommand}" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,20" />
+    </Grid>
+</Window>
